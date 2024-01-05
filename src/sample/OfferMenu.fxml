@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerOfferMenu">
+   <children>
+      <Button fx:id="maiu" layoutX="22.0" layoutY="25.0" mnemonicParsing="false" onAction="#backtoMainMenu" text="Main Menu" />
+      <TextField fx:id="offerField" layoutX="69.0" layoutY="180.0" onKeyTyped="#offerLoad" />
+      <Text layoutX="218.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Offer up" wrappingWidth="165.138671875">
+         <font>
+            <Font size="39.0" />
+         </font>
+      </Text>
+      <Button fx:id="submitOfferButton" layoutX="117.0" layoutY="232.0" mnemonicParsing="false" onAction="#submitOffer" text="Submit" />
+      <AnchorPane layoutX="301.0" layoutY="112.0" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Text fx:id="resultText" layoutX="14.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="149.0" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="label" layoutX="33.0" layoutY="184.0" />
+   </children>
+</AnchorPane>
